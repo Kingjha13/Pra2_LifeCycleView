@@ -10,35 +10,69 @@
         android:padding="24dp">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Android Activity Lifecycle"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textStyle="bold" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Activity Lifecycle Methods"
             android:textSize="16sp"
             android:textColor="#777777"
-            android:layout_marginTop="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="4dp" />
 
-        <TextView android:text="onCreate()" style="@style/LifecycleItem"/>
-        <TextView android:text="onStart()" style="@style/LifecycleItem"/>
-        <TextView android:text="onResume()" style="@style/LifecycleItem"/>
-        <TextView android:text="onPause()" style="@style/LifecycleItem"/>
-        <TextView android:text="onStop()" style="@style/LifecycleItem"/>
-        <TextView android:text="onRestart()" style="@style/LifecycleItem"/>
-        <TextView android:text="onDestroy()" style="@style/LifecycleItem"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onCreate()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onStart()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onResume()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onPause()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onStop()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onRestart()"
+            style="@style/LifecycleItem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onDestroy()"
+            style="@style/LifecycleItem" />
 
         <Button
             android:id="@+id/btnOpenSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Open Second Activity"
             android:layout_marginTop="24dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 </ScrollView>
