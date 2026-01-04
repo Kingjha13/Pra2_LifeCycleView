@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:text="Android Activity Lifecycle"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Activity Lifecycle Methods"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:text="onCreate()" style="@style/LifecycleItem"/>
+        <TextView android:text="onStart()" style="@style/LifecycleItem"/>
+        <TextView android:text="onResume()" style="@style/LifecycleItem"/>
+        <TextView android:text="onPause()" style="@style/LifecycleItem"/>
+        <TextView android:text="onStop()" style="@style/LifecycleItem"/>
+        <TextView android:text="onRestart()" style="@style/LifecycleItem"/>
+        <TextView android:text="onDestroy()" style="@style/LifecycleItem"/>
+
+        <Button
+            android:id="@+id/btnOpenSecond"
+            android:text="Open Second Activity"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
