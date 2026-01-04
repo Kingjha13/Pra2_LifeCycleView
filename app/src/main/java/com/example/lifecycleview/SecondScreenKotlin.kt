@@ -21,7 +21,7 @@ class SecondScreenKotlin : ComponentActivity() {
 @Composable
 fun SecondScreen(onBack:()->Unit){
     Button(onClick = onBack) {
-        Text(text = "Back")
+        Text(text = "Back Button")
     }
 
 }
