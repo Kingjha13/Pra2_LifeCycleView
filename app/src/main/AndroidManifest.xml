@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeCycleView"
         tools:targetApi="31">
+
+
+        <!--for kotlin change FirstScreenJava to MainActivity-->
         <activity
             android:name=".FirstScreenJava"
             android:exported="true"
