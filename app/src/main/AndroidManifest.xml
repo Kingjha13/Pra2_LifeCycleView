@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondScreenKotlin"></activity>
-
+        <activity android:name=".Tryed"></activity>
     </application>
 
 </manifest>

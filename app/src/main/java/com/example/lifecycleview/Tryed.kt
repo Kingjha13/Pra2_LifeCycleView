@@ -1,7 +1,7 @@
 package com.example.lifecycleview
 
-import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -10,15 +10,13 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
-class SecondScreenKotlin : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?){
+class Tryed : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            SecondScreen{
+            Ava{
                 finish()
             }
         }
@@ -26,15 +24,12 @@ class SecondScreenKotlin : ComponentActivity() {
 }
 
 @Composable
-fun SecondScreen(onBack:()->Unit){
-    val context= LocalContext.current
-    Column(modifier = Modifier.padding(top = 30.dp)) {
+fun Ava(onBack:()->Unit){
+    Column(modifier = Modifier.padding(top = 30.dp)){
+        Text(text = "avanish", modifier = Modifier.padding(top = 30.dp))
         Button(onClick = onBack) {
-            Text(text = "Back Button")
-        }
-        Button(onClick = {val intent=Intent(context,Tryed::class.java)
-            context.startActivity(intent)}) {
-            Text(text = "another move")
+            Text(text = "Back")
         }
     }
+
 }
